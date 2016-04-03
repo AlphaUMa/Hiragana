@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="0,1,2,3,4"
+        android:stretchColumns="0,1,2">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/kya"
+                style="@style/table_button"
+                android:layout_gravity="center"
+                android:text="@string/kya" />
+
+
+            <Button
+                android:id="@+id/kyu"
+                style="@style/table_button"
+                android:layout_gravity="center"
+                android:text="@string/kyu" />
+
+            <Button
+                android:id="@+id/kyo"
+                style="@style/table_button"
+                android:layout_gravity="center"
+                android:text="@string/kyo" />
+
+        </TableRow>
+        <TableRow>
+
+            <Button
+                android:id="@+id/sha"
+                style="@style/table_button"
+                android:layout_gravity="center"
+                android:text="@string/sha" />
+
+
+            <Button
+                android:id="@+id/shu"
+                style="@style/table_button"
+                android:layout_gravity="center"
+                android:text="@string/shu" />
+
+            <Button
+                android:id="@+id/sho"
+                style="@style/table_button"
+                android:layout_gravity="center"
+                android:text="@string/sho" />
+
+        </TableRow>
+        <TableRow>
+
+            <Button
+                android:id="@+id/cha"
+                style="@style/table_button"
+                android:layout_gravity="center"
+                android:text="@string/cha" />
+
+
+            <Button
+                android:id="@+id/chu"
+                style="@style/table_button"
+                android:layout_gravity="center"
+                android:text="@string/chu" />
+
+            <Button
+                android:id="@+id/cho"
+                style="@style/table_button"
+                android:layout_gravity="center"
+                android:text="@string/cho" />
+
+        </TableRow>
+        <TableRow>
+
+            <Button
+                android:id="@+id/hya"
+                style="@style/table_button"
+                android:layout_gravity="center"
+                android:text="@string/hya" />
+
+
+            <Button
+                android:id="@+id/hyu"
+                style="@style/table_button"
+                android:layout_gravity="center"
+                android:text="@string/hyu" />
+
+            <Button
+                android:id="@+id/hyo"
+                style="@style/table_button"
+                android:layout_gravity="center"
+                android:text="@string/hyo" />
+
+        </TableRow>
+     
+        <TableRow>
+
+            <Button
+                android:id="@+id/mya"
+                style="@style/table_button"
+                android:layout_gravity="center"
+                android:text="@string/mya" />
+
+
+            <Button
+                android:id="@+id/myu"
+                style="@style/table_button"
+                android:layout_gravity="center"
+                android:text="@string/myu" />
+
+            <Button
+                android:id="@+id/myo"
+                style="@style/table_button"
+                android:layout_gravity="center"
+                android:text="@string/myo" />
+
+        </TableRow>
+        <TableRow>
+
+            <Button
+                android:id="@+id/rya"
+                style="@style/table_button"
+                android:layout_gravity="center"
+                android:text="@string/rya" />
+
+
+            <Button
+                android:id="@+id/ryu"
+                style="@style/table_button"
+                android:layout_gravity="center"
+                android:text="@string/ryu" />
+
+            <Button
+                android:id="@+id/ryo"
+                style="@style/table_button"
+                android:layout_gravity="center"
+                android:text="@string/ryo" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

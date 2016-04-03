@@ -1,4 +1,4 @@
-package com.example.zz7.forth;
+package com.example.zz7.hiragana;
 
 import org.junit.Test;
 

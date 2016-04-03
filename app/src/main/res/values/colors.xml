@@ -3,4 +3,18 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="hi_white">#FFFFFF</color>
+
+
+   <!-- bilibili color style-->
+    <color name="pink">#FFAFC9</color>
+    <color name="blue">#6ECBE4</color>
+    <color name="green">#5CD2A7</color>
+    <color name="brown">#E8A44C</color>
+    <color name="red">#F86952</color>
+    <color name="light_blue">#DBAEDB</color>
+    <color name="light_orange">#FF9352</color>
+
+
 </resources>

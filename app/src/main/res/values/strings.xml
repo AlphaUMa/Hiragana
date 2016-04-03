@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">五十音</string>
+    <string name="app_name">五十音—平假名</string>
     <string name="action_settings">Settings</string>
+
+    <!--   monographs-清音-->
     <string name="a">あ</string>
     <string name="i">い</string>
     <string name="u">う</string>
@@ -46,6 +48,100 @@
     <string name="lo">ろ</string>
     <string name="wa">わ</string>
     <string name="wo">を</string>
+
+    <!-- digraphs-清拗音-->
+    <string name="kya">きゃ</string>
+    <string name="kyu">きゅ</string>
+    <string name="kyo">きょ</string>
+
+    <string name="sha">しゃ</string>
+    <string name="shu">しゅ</string>
+    <string name="sho">しょ</string>
+
+    <string name="cha">ちゃ</string>
+    <string name="chu">ちゅ</string>
+    <string name="cho">ちょ</string>
+
+    <string name="nya">にゃ</string>
+    <string name="nyu">にゅ</string>
+    <string name="nyo">にょ</string>
+
+    <string name="hya">ひゃ</string>
+    <string name="hyu">ひゅ</string>
+    <string name="hyo">ひょ</string>
+
+    <string name="mya">みゃ</string>
+    <string name="myu">みゅ</string>
+    <string name="myo">みょ</string>
+
+    <string name="rya">りゃ</string>
+    <string name="ryu">りゅ</string>
+    <string name="ryo">りょ</string>
+
+
+    <!--dicritics-浊音-->
+    <string name="ga">が</string>
+    <string name="gi">ぎ</string>
+    <string name="gu">ぐ</string>
+    <string name="ge">げ</string>
+    <string name="go">ご</string>
+
+    <string name="za">ざ</string>
+    <string name="ji1">じ</string>
+    <string name="zu1">ず</string>
+    <string name="ze">ぜ</string>
+    <string name="zo">ぞ</string>
+
+    <string name="da">だ</string>
+    <string name="ji2">ぢ</string>
+    <string name="zu2">づ</string>
+    <string name="de">で</string>
+    <string name="do1">ど</string>
+
+    <string name="ba">ば</string>
+    <string name="bi">び</string>
+    <string name="bu">ぶ</string>
+    <string name="be">べ</string>
+    <string name="bo">ぼ</string>
+
+    <string name="pa">ぱ</string>
+    <string name="pi">ぴ</string>
+    <string name="pu">ぷ</string>
+    <string name="pe">ぺ</string>
+    <string name="po">ぽ</string>
+
+    <!--  digraphs_diacritics-浊拗音-->
+    <string name="gya">ぎゃ</string>
+    <string name="gyu">ぎゅ</string>
+    <string name="gyo">ぎょ</string>
+
+    <string name="ja1">じゃ</string>
+    <string name="ju1">じゅ</string>
+    <string name="jo1">じょ</string>
+
+    <string name="ja2">ぢゃ</string>
+    <string name="ju2">ぢゅ</string>
+    <string name="jo2">ぢょ</string>
+
+    <string name="bya">びゃ</string>
+    <string name="byu">びゅ</string>
+    <string name="byo">びょ</string>
+
+    <string name="pya">ぴゃ</string>
+    <string name="pyu">ぴゅ</string>
+    <string name="pyo">ぴょ</string>
+
+
+    <!-- radiobutton-->
+
+    <string name="rb_1">清音</string>
+    <string name="rb_2">濁音</string>
+    <string name="rb_3">清拗音</string>
+    <string name="rb_4">濁拗音</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
