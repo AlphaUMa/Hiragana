@@ -16,20 +16,23 @@
                 android:id="@+id/kya"
                 style="@style/table_button"
                 android:layout_gravity="center"
-                android:text="@string/kya" />
+                android:text="@string/kya"
+                android:onClick="ButtonOnClick"/>
 
 
             <Button
                 android:id="@+id/kyu"
                 style="@style/table_button"
                 android:layout_gravity="center"
-                android:text="@string/kyu" />
+                android:text="@string/kyu"
+                android:onClick="ButtonOnClick"/>
 
             <Button
                 android:id="@+id/kyo"
                 style="@style/table_button"
                 android:layout_gravity="center"
-                android:text="@string/kyo" />
+                android:text="@string/kyo"
+                android:onClick="ButtonOnClick"/>
 
         </TableRow>
         <TableRow>
@@ -38,20 +41,23 @@
                 android:id="@+id/sha"
                 style="@style/table_button"
                 android:layout_gravity="center"
-                android:text="@string/sha" />
+                android:text="@string/sha"
+                android:onClick="ButtonOnClick"/>
 
 
             <Button
                 android:id="@+id/shu"
                 style="@style/table_button"
                 android:layout_gravity="center"
-                android:text="@string/shu" />
+                android:text="@string/shu"
+                android:onClick="ButtonOnClick"/>
 
             <Button
                 android:id="@+id/sho"
                 style="@style/table_button"
                 android:layout_gravity="center"
-                android:text="@string/sho" />
+                android:text="@string/sho"
+                android:onClick="ButtonOnClick"/>
 
         </TableRow>
         <TableRow>
@@ -60,20 +66,23 @@
                 android:id="@+id/cha"
                 style="@style/table_button"
                 android:layout_gravity="center"
-                android:text="@string/cha" />
+                android:text="@string/cha"
+                android:onClick="ButtonOnClick"/>
 
 
             <Button
                 android:id="@+id/chu"
                 style="@style/table_button"
                 android:layout_gravity="center"
-                android:text="@string/chu" />
+                android:text="@string/chu"
+                android:onClick="ButtonOnClick"/>
 
             <Button
                 android:id="@+id/cho"
                 style="@style/table_button"
                 android:layout_gravity="center"
-                android:text="@string/cho" />
+                android:text="@string/cho"
+                android:onClick="ButtonOnClick"/>
 
         </TableRow>
         <TableRow>
@@ -82,20 +91,23 @@
                 android:id="@+id/hya"
                 style="@style/table_button"
                 android:layout_gravity="center"
-                android:text="@string/hya" />
+                android:text="@string/hya"
+                android:onClick="ButtonOnClick"/>
 
 
             <Button
                 android:id="@+id/hyu"
                 style="@style/table_button"
                 android:layout_gravity="center"
-                android:text="@string/hyu" />
+                android:text="@string/hyu"
+                android:onClick="ButtonOnClick"/>
 
             <Button
                 android:id="@+id/hyo"
                 style="@style/table_button"
                 android:layout_gravity="center"
-                android:text="@string/hyo" />
+                android:text="@string/hyo"
+                android:onClick="ButtonOnClick"/>
 
         </TableRow>
      
@@ -105,20 +117,23 @@
                 android:id="@+id/mya"
                 style="@style/table_button"
                 android:layout_gravity="center"
-                android:text="@string/mya" />
+                android:text="@string/mya"
+                android:onClick="ButtonOnClick"/>
 
 
             <Button
                 android:id="@+id/myu"
                 style="@style/table_button"
                 android:layout_gravity="center"
-                android:text="@string/myu" />
+                android:text="@string/myu"
+                android:onClick="ButtonOnClick"/>
 
             <Button
                 android:id="@+id/myo"
                 style="@style/table_button"
                 android:layout_gravity="center"
-                android:text="@string/myo" />
+                android:text="@string/myo"
+                android:onClick="ButtonOnClick"/>
 
         </TableRow>
         <TableRow>
@@ -127,20 +142,23 @@
                 android:id="@+id/rya"
                 style="@style/table_button"
                 android:layout_gravity="center"
-                android:text="@string/rya" />
+                android:text="@string/rya"
+                android:onClick="ButtonOnClick"/>
 
 
             <Button
                 android:id="@+id/ryu"
                 style="@style/table_button"
                 android:layout_gravity="center"
-                android:text="@string/ryu" />
+                android:text="@string/ryu"
+                android:onClick="ButtonOnClick"/>
 
             <Button
                 android:id="@+id/ryo"
                 style="@style/table_button"
                 android:layout_gravity="center"
-                android:text="@string/ryo" />
+                android:text="@string/ryo"
+                android:onClick="ButtonOnClick"/>
 
         </TableRow>
 

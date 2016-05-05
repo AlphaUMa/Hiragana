@@ -22,7 +22,7 @@
     <string name="chi">ち</string>
     <string name="tsu">つ</string>
     <string name="te">て</string>
-    <string name="to">と</string>
+    <string name="tooo">と</string>
     <string name="na">な</string>
     <string name="ni">に</string>
     <string name="nu">ぬ</string>
@@ -41,11 +41,11 @@
     <string name="ya">や</string>
     <string name="yu">ゆ</string>
     <string name="yo">よ</string>
-    <string name="la">ら</string>
-    <string name="li">り</string>
-    <string name="lu">る</string>
-    <string name="le">れ</string>
-    <string name="lo">ろ</string>
+    <string name="ra">ら</string>
+    <string name="ri">り</string>
+    <string name="ru">る</string>
+    <string name="re">れ</string>
+    <string name="ro">ろ</string>
     <string name="wa">わ</string>
     <string name="wo">を</string>
 
@@ -96,7 +96,7 @@
     <string name="ji2">ぢ</string>
     <string name="zu2">づ</string>
     <string name="de">で</string>
-    <string name="do1">ど</string>
+    <string name="dooo">ど</string>
 
     <string name="ba">ば</string>
     <string name="bi">び</string>
@@ -142,6 +142,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
 
 
 </resources>

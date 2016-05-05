@@ -1,12 +1,25 @@
 package com.example.zz7.hiragana;
 
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.media.SoundPool;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.common.api.GoogleApiClient;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity implements
         ViewPager.OnPageChangeListener {
@@ -22,6 +35,13 @@ public class MainActivity extends AppCompatActivity implements
     private RadioButton rb_3;
     private RadioButton rb_4;
     private ViewPager pager;
+    private MediaPlayer mp;
+
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    private GoogleApiClient client;
 
 
     public void init() {
@@ -65,34 +85,32 @@ public class MainActivity extends AppCompatActivity implements
     }
 
 
-
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
-      //  boolean checked = ((RadioButton) view).isChecked();
+        //  boolean checked = ((RadioButton) view).isChecked();
 
         // Check which radio button was clicked
-        Log.e("HEHE","clicked!");
+        Log.e("HEHE", "clicked!");
         switch (view.getId()) {
 
             case R.id.rb_1:
                 rb_1.setChecked(true);
-                Log.e("HEHE","rb_1 clicked!");
+                Log.e("HEHE", "rb_1 clicked!");
                 break;
             case R.id.rb_2:
                 rb_2.setChecked(true);
-                Log.e("HEHE","rb_2 clicked!");
+                Log.e("HEHE", "rb_2 clicked!");
                 break;
             case R.id.rb_3:
                 rb_3.setChecked(true);
-                Log.e("HEHE","rb_3 clicked!");
+                Log.e("HEHE", "rb_3 clicked!");
                 break;
             case R.id.rb_4:
                 rb_4.setChecked(true);
-                Log.e("HEHE","rb_4 clicked!");
+                Log.e("HEHE", "rb_4 clicked!");
                 break;
         }
     }
-
 
 
     @Override
@@ -102,12 +120,10 @@ public class MainActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_main);
 
         init();
-        //listen();
 
     }
 
 
-    @Override
     public void onPageScrollStateChanged(int state) {
         if (state == 2) {
             switch (pager.getCurrentItem()) {
@@ -140,5 +156,21 @@ public class MainActivity extends AppCompatActivity implements
     public void onPageSelected(int position) {
     }
 
+
+    public void ButtonOnClick(View v) {
+        int id = v.getId();
+        String name = getResources().getResourceEntryName(v.getId());
+        Log.e("button", name);
+
+        Uri uri = Uri.parse("android.resource://" + getPackageName() + "/raw/" + name);
+        Log.e("uri", uri.toString());
+
+
+        if (mp != null) {
+            mp.reset();
+        }
+        mp = MediaPlayer.create(v.getContext(), uri);
+        mp.start();
+    }
 
 }
