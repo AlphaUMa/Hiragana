@@ -22,5 +22,13 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.test).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent k = new Intent(Main2Activity.this, TestActivity.class);
+                startActivity(k);
+            }
+        });
+
     }
 }
