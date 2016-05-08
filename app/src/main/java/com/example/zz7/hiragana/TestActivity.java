@@ -60,21 +60,27 @@ public class TestActivity extends AppCompatActivity {
 
         refreshQuestion();
 
-
         selections.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                if (rightId.equals(getResources().getResourceEntryName(checkedId)))
+                String s=getResources().getResourceEntryName(checkedId);
+                Log.e("checkid", s);
+
+                if (rightId.equals(s))
                     correct++;
-                else wrong++;
+                else
+                    wrong++;
 
                 correctTextView.setText(String.valueOf(correct));
                 wrongTextView.setText(String.valueOf(wrong));
 
-                selections.clearCheck();
+               // selections.clearCheck();//bug
 
                 refreshQuestion();
+
+                RadioButton tmp= (RadioButton) findViewById(checkedId);
+                tmp.setChecked(false);
             }
         });
 

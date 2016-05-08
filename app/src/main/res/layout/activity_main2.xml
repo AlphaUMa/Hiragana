@@ -10,38 +10,38 @@
     tools:context="com.example.zz7.hiragana.Main2Activity">
 
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Test"
-            android:id="@+id/test"
-            android:layout_below="@+id/button"
-            android:layout_alignStart="@+id/button"
-            android:layout_marginTop="87dp"
-            android:layout_gravity="center_horizontal" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Practice"
-            android:id="@+id/button"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal" />
-    </LinearLayout>
-
     <TextView
+        android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome!"
+        android:textAllCaps="true"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Welcom to Hiragana!!!"
-        android:id="@+id/textView"
-        android:layout_alignBottom="@+id/test"
-        android:layout_centerHorizontal="true" />
+        android:textColor="@color/green"
+        android:textSize="40dp"
+        android:textColorHint="@color/red"/>
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Test"
+        android:textColor="@color/red"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/practice"
+        style="@style/main_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Practice" />
+
 
 </RelativeLayout>

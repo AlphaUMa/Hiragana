@@ -12,7 +12,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.practice).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
