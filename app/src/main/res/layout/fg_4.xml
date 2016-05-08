@@ -15,7 +15,6 @@
             <Button
                 android:id="@+id/gya"
                 style="@style/table_button"
-                android:layout_gravity="center"
                 android:text="@string/gya"
                 android:onClick="ButtonOnClick"/>
 
@@ -23,14 +22,12 @@
             <Button
                 android:id="@+id/gyu"
                 style="@style/table_button"
-                android:layout_gravity="center"
                 android:text="@string/gyu"
                 android:onClick="ButtonOnClick"/>
 
             <Button
                 android:id="@+id/gyo"
                 style="@style/table_button"
-                android:layout_gravity="center"
                 android:text="@string/gyo"
                 android:onClick="ButtonOnClick"/>
 
@@ -41,7 +38,6 @@
             <Button
                 android:id="@+id/ja1"
                 style="@style/table_button"
-                android:layout_gravity="center"
                 android:text="@string/ja1"
                 android:onClick="ButtonOnClick"/>
 
@@ -49,14 +45,12 @@
             <Button
                 android:id="@+id/ju1"
                 style="@style/table_button"
-                android:layout_gravity="center"
                 android:text="@string/ju1"
                 android:onClick="ButtonOnClick"/>
 
             <Button
                 android:id="@+id/jo1"
                 style="@style/table_button"
-                android:layout_gravity="center"
                 android:text="@string/jo1"
                 android:onClick="ButtonOnClick"/>
 
@@ -67,7 +61,6 @@
             <Button
                 android:id="@+id/ja2"
                 style="@style/table_button"
-                android:layout_gravity="center"
                 android:text="@string/ja2"
                 android:onClick="ButtonOnClick"/>
 
@@ -75,14 +68,12 @@
             <Button
                 android:id="@+id/ju2"
                 style="@style/table_button"
-                android:layout_gravity="center"
                 android:text="@string/ju2"
                 android:onClick="ButtonOnClick"/>
 
             <Button
                 android:id="@+id/jo2"
                 style="@style/table_button"
-                android:layout_gravity="center"
                 android:text="@string/jo2"
                 android:onClick="ButtonOnClick"/>
 
@@ -93,7 +84,6 @@
             <Button
                 android:id="@+id/bya"
                 style="@style/table_button"
-                android:layout_gravity="center"
                 android:text="@string/bya"
                 android:onClick="ButtonOnClick"/>
 
@@ -101,14 +91,12 @@
             <Button
                 android:id="@+id/byu"
                 style="@style/table_button"
-                android:layout_gravity="center"
                 android:text="@string/byu"
                 android:onClick="ButtonOnClick"/>
 
             <Button
                 android:id="@+id/byo"
                 style="@style/table_button"
-                android:layout_gravity="center"
                 android:text="@string/byo"
                 android:onClick="ButtonOnClick"/>
 
@@ -119,7 +107,6 @@
             <Button
                 android:id="@+id/pya"
                 style="@style/table_button"
-                android:layout_gravity="center"
                 android:text="@string/pya"
                 android:onClick="ButtonOnClick"/>
 
@@ -127,14 +114,12 @@
             <Button
                 android:id="@+id/pyu"
                 style="@style/table_button"
-                android:layout_gravity="center"
                 android:text="@string/pyu"
                 android:onClick="ButtonOnClick"/>
 
             <Button
                 android:id="@+id/pyo"
                 style="@style/table_button"
-                android:layout_gravity="center"
                 android:text="@string/pyo"
                 android:onClick="ButtonOnClick"/>
 
