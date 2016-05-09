@@ -5,10 +5,10 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.view.ViewGroup;
 
-import static com.example.zz7.hiragana.MainActivity.PAGE_FOUR;
-import static com.example.zz7.hiragana.MainActivity.PAGE_ONE;
-import static com.example.zz7.hiragana.MainActivity.PAGE_THREE;
-import static com.example.zz7.hiragana.MainActivity.PAGE_TWO;
+import static com.example.zz7.hiragana.PracticeActivity.PAGE_FOUR;
+import static com.example.zz7.hiragana.PracticeActivity.PAGE_ONE;
+import static com.example.zz7.hiragana.PracticeActivity.PAGE_THREE;
+import static com.example.zz7.hiragana.PracticeActivity.PAGE_TWO;
 
 /**
  * Created by zz7 on 16-4-3.
