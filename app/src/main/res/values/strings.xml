@@ -134,10 +134,10 @@
 
     <!-- radiobutton-->
 
-    <string name="rb_1">清音</string>
-    <string name="rb_2">濁音</string>
-    <string name="rb_3">清拗音</string>
-    <string name="rb_4">濁拗音</string>
+    <string name="rb_1">あ</string>
+    <string name="rb_2">が</string>
+    <string name="rb_3">きゃ</string>
+    <string name="rb_4">ぎゃ</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->
