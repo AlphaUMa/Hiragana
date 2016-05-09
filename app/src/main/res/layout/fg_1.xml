@@ -6,11 +6,12 @@
 
 
     <TableLayout
+        android:id="@+id/table1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:shrinkColumns="0,1,2,3,4">
+        android:shrinkColumns="0,1,2,3,4">-->
 
-        <TableRow>
+        <!--<TableRow>
 
             <Button
                 android:id="@+id/a"
@@ -386,8 +387,7 @@
                 android:onClick="ButtonOnClick"/>
 
         </TableRow>
-
+-->
 
     </TableLayout>
-
 </LinearLayout>

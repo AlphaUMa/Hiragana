@@ -32,5 +32,10 @@
         <item name="android:layout_marginTop">50dp</item>
     </style>
 
+    <style name="text1">
+        <item name="android:textColor">@color/brown</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
 
 </resources>

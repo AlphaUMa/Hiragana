@@ -44,8 +44,8 @@ public class TestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
-        questions_array = getResources().getStringArray(R.array.questions);
-        answers_array = getResources().getStringArray(R.array.answers);
+        questions_array = getResources().getStringArray(R.array.a);
+        answers_array = getResources().getStringArray(R.array.s_a);
 
         all[0] = (RadioButton) findViewById(R.id.item1);
         all[1] = (RadioButton) findViewById(R.id.item2);

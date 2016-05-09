@@ -6,11 +6,12 @@
 
 
     <TableLayout
+        android:id="@+id/table2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:shrinkColumns="0,1,2,3,4">
 
-    <TableRow>
+   <!-- <TableRow>
 
         <Button
             android:id="@+id/ga"
@@ -199,6 +200,8 @@
             android:layout_gravity="center"
             android:text="@string/po"
             android:onClick="ButtonOnClick"/>
-    </TableRow>
+    </TableRow>-->
+
+
     </TableLayout>
 </LinearLayout>

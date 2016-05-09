@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">五十音—平假名</string>
+    <string name="practice_title">Practice</string>
+    <string name="test_title">Quiz</string>
     <string name="action_settings">Settings</string>
 
     <!--   monographs-清音-->
