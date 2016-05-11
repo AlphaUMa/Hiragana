@@ -1,6 +1,5 @@
 package com.example.zz7.hiragana;
 
-import android.content.DialogInterface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,15 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.FrameLayout;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.net.Uri;
-
-import java.net.URI;
 
 /**
  * Created by zz7 on 16-4-3.
@@ -48,39 +41,37 @@ public class Fragment1 extends Fragment {
                 button.setText(name_array[5 * i + j]);
                 button.setId(100 + i * 5 + j);
 
-                TableRow.LayoutParams params = new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT,
-                        TableRow.LayoutParams.WRAP_CONTENT);
-                params.weight=1;
-                params.gravity=Gravity.CENTER;
-                button.setLayoutParams(params);
+//                TableRow.LayoutParams params = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
+//                        TableRow.LayoutParams.MATCH_PARENT);
+//                params.weight=1;
+//                params.gravity=Gravity.CENTER;
+//                button.setLayoutParams(params);
 
                 button.setGravity(Gravity.CENTER);
                 button.setTextSize(32);
-
-
-
+                button.setBackground(getResources().getDrawable(R.drawable.table_button));
 
                         button.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                int id = v.getId() - 100;
+                    @Override
+                    public void onClick(View v) {
+                        int id = v.getId() - 100;
 
-                                if (id == 14)
-                                    uri = Uri.parse("android.resource://" + getContext().getPackageName() + "/raw/" + "tooo");
+                        if (id == 14)
+                            uri = Uri.parse("android.resource://" + getContext().getPackageName() + "/raw/" + "tooo");
 
-                                else
-                                    uri = Uri.parse("android.resource://" + getContext().getPackageName() + "/raw/" + sound_array[v.getId() - 100]);
-                                Log.e("uri", uri.toString());
+                        else
+                            uri = Uri.parse("android.resource://" + getContext().getPackageName() + "/raw/" + sound_array[v.getId() - 100]);
+                        Log.e("uri", uri.toString());
 
-                                if (mp != null) {
-                                    mp.reset();
-                                }
-                                mp = MediaPlayer.create(v.getContext(), uri);
-                                if (mp != null) {
-                                    mp.start();
-                                }
-                            }
-                        });
+                        if (mp != null) {
+                            mp.reset();
+                        }
+                        mp = MediaPlayer.create(v.getContext(), uri);
+                        if (mp != null) {
+                            mp.start();
+                        }
+                    }
+                });
                 currentRow.addView(button);
             }
             tableLayout.addView(currentRow);

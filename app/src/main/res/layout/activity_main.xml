@@ -18,33 +18,33 @@
         android:text="Welcome!"
         android:textAllCaps="true"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/green"
-        android:textColorHint="@color/red"
-        android:textSize="40dp" />
+        android:textColor="@color/pink"
+        android:textSize="50dp" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/welcome"
-        android:layout_centerHorizontal="true"
         android:orientation="vertical">
 
         <Button
             android:id="@+id/test"
             style="@style/main_button"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/welcome"
-            android:layout_centerHorizontal="true"
-            android:text="Test" />
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:text="Have a quiz" />
 
         <Button
             android:id="@+id/practice"
             style="@style/main_button"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/test"
-            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
             android:text="Practice" />
 
     </LinearLayout>

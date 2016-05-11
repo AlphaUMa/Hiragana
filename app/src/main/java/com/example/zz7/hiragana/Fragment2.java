@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,8 +39,10 @@ public class Fragment2 extends Fragment {
                 Button button = new Button(getContext());
                 button.setText(name_array[5 * i + j]);
                 button.setId(200 + i * 5 + j);
-//                uri = Uri.parse("android.resource://" + getContext().getPackageName() + "/raw/" + sound_array[i*5+j] );
-//                Log.e("uri", uri.toString());
+
+                button.setGravity(Gravity.CENTER);
+                button.setTextSize(32);
+                button.setBackground(getResources().getDrawable(R.drawable.table_button));
 
                 button.setOnClickListener(new View.OnClickListener() {
                     @Override
