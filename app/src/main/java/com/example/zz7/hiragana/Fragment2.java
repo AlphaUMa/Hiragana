@@ -25,26 +25,31 @@ public class Fragment2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fg_2, container, false);
 
-        TableLayout tableLayout= (TableLayout) view.findViewById(R.id.table2);
-        String [] name_array = getResources().getStringArray(R.array.ga);
-        final String [] sound_array= getResources().getStringArray(R.array.s_ga);
+        TableLayout tableLayout = (TableLayout) view.findViewById(R.id.table2);
+        String[] name_array = getResources().getStringArray(R.array.ga);
+        final String[] sound_array = getResources().getStringArray(R.array.s_ga);
 
-        for(int i=0;i<5;i++){
+        for (int i = 0; i < 5; i++) {
 
-            TableRow currentRow=new TableRow(getContext());
+            TableRow currentRow = new TableRow(getContext());
 
-            for(int j=0;j<5;j++){
+            for (int j = 0; j < 5; j++) {
 
-                Button button=new Button(getContext());
+                Button button = new Button(getContext());
                 button.setText(name_array[5 * i + j]);
-                button.setId(200+i*5+j);
+                button.setId(200 + i * 5 + j);
 //                uri = Uri.parse("android.resource://" + getContext().getPackageName() + "/raw/" + sound_array[i*5+j] );
 //                Log.e("uri", uri.toString());
 
                 button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        uri = Uri.parse("android.resource://" + getContext().getPackageName() + "/raw/" + sound_array[v.getId()-200]);
+                        int id = v.getId() - 200;
+
+                        if (id == 14)
+                            uri = Uri.parse("android.resource://" + getContext().getPackageName() + "/raw/" + "dooo");
+                        else
+                            uri = Uri.parse("android.resource://" + getContext().getPackageName() + "/raw/" + sound_array[v.getId() - 200]);
                         Log.e("uri", uri.toString());
                         if (mp != null) {
                             mp.reset();

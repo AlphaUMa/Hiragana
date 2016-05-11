@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
+    android:layout_weight="5"
+    android:fillViewport="true">
 
     <TableLayout
         android:id="@+id/table1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:shrinkColumns="0,1,2,3,4">-->
+        android:layout_weight="5"
+        android:shrinkColumns="0,1,2,3,4"
+        android:stretchColumns="0,1,2,3,4">
 
-        <!--<TableRow>
+   <!--     <TableRow>
 
             <Button
-                android:id="@+id/a"
+                android:id="@+id/a1"
                 style="@style/table_button"
                 android:layout_gravity="center"
                 android:text="@string/a"
@@ -22,28 +26,28 @@
 
 
             <Button
-                android:id="@+id/i"
+                android:id="@+id/i1"
                 style="@style/table_button"
                 android:layout_gravity="center"
                 android:text="@string/i"
                 android:onClick="ButtonOnClick"/>
 
             <Button
-                android:id="@+id/u"
+                android:id="@+id/u1"
                 style="@style/table_button"
                 android:layout_gravity="center"
                 android:text="@string/u"
                 android:onClick="ButtonOnClick"/>
 
             <Button
-                android:id="@+id/e"
+                android:id="@+id/e1"
                 style="@style/table_button"
                 android:layout_gravity="center"
                 android:text="@string/e"
                 android:onClick="ButtonOnClick"/>
 
             <Button
-                android:id="@+id/o"
+                android:id="@+id/o1"
                 style="@style/table_button"
                 android:layout_gravity="center"
                 android:text="@string/o"
@@ -386,8 +390,8 @@
                 android:text="@string/wo"
                 android:onClick="ButtonOnClick"/>
 
-        </TableRow>
+        </TableRow>-->
 -->
 
     </TableLayout>
-</LinearLayout>
+</ScrollView>

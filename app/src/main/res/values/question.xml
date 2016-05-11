@@ -113,6 +113,10 @@
         <item></item>
         <item>ヲ</item>
         <item>ン</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
 
 
@@ -297,7 +301,9 @@
         <item>me</item>
         <item>mo</item>
         <item>ya</item>
+        <item></item>
         <item>yu</item>
+        <item></item>
         <item>yo</item>
         <item>ra</item>
         <item>ri</item>
@@ -305,8 +311,15 @@
         <item>re</item>
         <item>ro</item>
         <item>wa</item>
+        <item></item>
+        <item></item>
+        <item></item>
         <item>wo</item>
         <item>n</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
 
     <string-array name="s_kya">
@@ -379,5 +392,6 @@
         <item>pyu</item>
         <item>pyo</item>
     </string-array>
+
 
 </resources>
