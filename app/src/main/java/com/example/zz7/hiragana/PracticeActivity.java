@@ -5,7 +5,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -27,6 +29,7 @@ public class PracticeActivity extends AppCompatActivity implements
     private RadioButton rb_4;
     private ViewPager pager;
     private MediaPlayer mp;
+    private Toolbar toolbar;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -42,6 +45,8 @@ public class PracticeActivity extends AppCompatActivity implements
         rb_2 = (RadioButton) findViewById(R.id.rb_2);
         rb_3 = (RadioButton) findViewById(R.id.rb_3);
         rb_4 = (RadioButton) findViewById(R.id.rb_4);
+        toolbar= (Toolbar) findViewById(R.id.p_toolbar);
+        setSupportActionBar(toolbar);
 
         pager = (ViewPager) findViewById(R.id.pager);
 
@@ -164,4 +169,30 @@ public class PracticeActivity extends AppCompatActivity implements
         mp.start();
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+
+        switch (item.getItemId()) {
+            case R.id.menu_toggle:
+
+                if(birthSort){
+                    //change your view and sort it by Alphabet
+                    item.setIcon(icon1)
+                    item.setTitle(title1)
+                    birthSort=false;
+                }else{
+                    //change your view and sort it by Date of Birth
+                    item.setIcon(icon2)
+                    item.setTitle(title2)
+                    birthSort=true;
+                }
+                return true;
+
+
+
+        }
+        return super.onOptionsItemSelected(item);
+
+    }
 }

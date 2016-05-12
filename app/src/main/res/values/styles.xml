@@ -8,6 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.PracticeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+
+    </style>
+
+    <style name="AppTheme.TestTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+
+    </style>
+
 
     <style name="table_button" parent="Base.Widget.AppCompat.Button">
         <item name="android:textSize">25dp</item>
