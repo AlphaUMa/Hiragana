@@ -9,8 +9,10 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.ToggleButton;
 
 import com.google.android.gms.common.api.GoogleApiClient;
 
@@ -21,6 +23,7 @@ public class PracticeActivity extends AppCompatActivity implements
     public static final int PAGE_TWO = 1;
     public static final int PAGE_THREE = 2;
     public static final int PAGE_FOUR = 3;
+    public static  int flag=0;
 
     private RadioGroup rg;
     private RadioButton rb_1;
@@ -30,6 +33,7 @@ public class PracticeActivity extends AppCompatActivity implements
     private ViewPager pager;
     private MediaPlayer mp;
     private Toolbar toolbar;
+    private ToggleButton p_toggle;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -45,8 +49,11 @@ public class PracticeActivity extends AppCompatActivity implements
         rb_2 = (RadioButton) findViewById(R.id.rb_2);
         rb_3 = (RadioButton) findViewById(R.id.rb_3);
         rb_4 = (RadioButton) findViewById(R.id.rb_4);
+
         toolbar= (Toolbar) findViewById(R.id.p_toolbar);
-        setSupportActionBar(toolbar);
+        //setSupportActionBar(toolbar);
+       // toolbar.inflateMenu(R.menu.menu_main);
+        p_toggle= (ToggleButton) findViewById(R.id.p_toogle);
 
         pager = (ViewPager) findViewById(R.id.pager);
 
@@ -75,6 +82,17 @@ public class PracticeActivity extends AppCompatActivity implements
                     case R.id.rb_4:
                         pager.setCurrentItem(PAGE_FOUR);
                         break;
+                }
+            }
+        });
+
+
+        p_toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    flag=1;
+                } else {
+                    flag=0;
                 }
             }
         });
@@ -173,26 +191,27 @@ public class PracticeActivity extends AppCompatActivity implements
     public boolean onOptionsItemSelected(MenuItem item) {
 
 
-        switch (item.getItemId()) {
-            case R.id.menu_toggle:
+//        switch (item.getItemId()) {
+//            case R.id.menu_toggle:
+//
+//                if(birthSort){
+//                    //change your view and sort it by Alphabet
+//                    item.setIcon(icon1)
+//                    item.setTitle(title1)
+//                    birthSort=false;
+//                }else{
+//                    //change your view and sort it by Date of Birth
+//                    item.setIcon(icon2)
+//                    item.setTitle(title2)
+//                    birthSort=true;
+//                }
+//                return true;
 
-                if(birthSort){
-                    //change your view and sort it by Alphabet
-                    item.setIcon(icon1)
-                    item.setTitle(title1)
-                    birthSort=false;
-                }else{
-                    //change your view and sort it by Date of Birth
-                    item.setIcon(icon2)
-                    item.setTitle(title2)
-                    birthSort=true;
-                }
-                return true;
 
 
-
-        }
+        //}
         return super.onOptionsItemSelected(item);
 
     }
+
 }

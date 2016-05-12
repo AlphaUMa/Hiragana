@@ -21,6 +21,7 @@ public class Fragment1 extends Fragment {
 
     private MediaPlayer mp;
     private Uri uri;
+    private  String[] name_array;
 
 
     @Override
@@ -28,7 +29,11 @@ public class Fragment1 extends Fragment {
         final View view = inflater.inflate(R.layout.fg_1, container, false);
 
         TableLayout tableLayout = (TableLayout) view.findViewById(R.id.table1);
-        String[] name_array = getResources().getStringArray(R.array.a);
+        if (PracticeActivity.flag == 0) {
+            name_array = getResources().getStringArray(R.array.a);
+        } else {
+            name_array = getResources().getStringArray(R.array.a2);
+        }
         final String[] sound_array = getResources().getStringArray(R.array.s_a);
 
         for (int i = 0; i < 11; i++) {
@@ -51,7 +56,7 @@ public class Fragment1 extends Fragment {
                 button.setTextSize(32);
                 button.setBackground(getResources().getDrawable(R.drawable.table_button));
 
-                        button.setOnClickListener(new View.OnClickListener() {
+                button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         int id = v.getId() - 100;
